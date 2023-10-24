@@ -1,9 +1,20 @@
 import { Carousel } from "flowbite-react";
 import { Blockquote, Avatar, Rating } from "flowbite-react";
+import TestimonialsBg from "../assets/testimonials-bg.png";
 
 const Testimonials = () => {
+  const divStyle = {
+    backgroundImage: `url(${TestimonialsBg})`,
+    backgroundSize: "auto 1200px",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+  };
+
   return (
-    <div className="px-4 lg:px-20 py-16 max-w-screen-2x1 mx-auto  ">
+    <div
+      className="px-4 lg:px-20 py-16 max-w-screen-2x1 mx-auto "
+      style={divStyle}
+    >
       <div className="mt-16 md:w-1/2 mx-auto text-center">
         <h2 className="text-4xl text-ddnsDarkGrey font-semibold">
           What Our Customers Say About Us?
